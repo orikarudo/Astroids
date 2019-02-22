@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		38B400A42220357600700D91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B400A32220357600700D91 /* AppDelegate.swift */; };
+		38B400A62220357600700D91 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 38B400A52220357600700D91 /* GameScene.sks */; };
+		38B400A82220357600700D91 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 38B400A72220357600700D91 /* Actions.sks */; };
+		38B400AA2220357600700D91 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B400A92220357600700D91 /* GameScene.swift */; };
+		38B400AC2220357600700D91 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B400AB2220357600700D91 /* GameViewController.swift */; };
+		38B400AF2220357600700D91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38B400AD2220357600700D91 /* Main.storyboard */; };
+		38B400B12220357700700D91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38B400B02220357700700D91 /* Assets.xcassets */; };
+		38B400B42220357700700D91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38B400B22220357700700D91 /* LaunchScreen.storyboard */; };
+		38B400BF2220357700700D91 /* AstroidsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B400BE2220357700700D91 /* AstroidsTests.swift */; };
+		38B400CA2220357700700D91 /* AstroidsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B400C92220357700700D91 /* AstroidsUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		38B400BB2220357700700D91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38B400982220357600700D91 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 38B4009F2220357600700D91;
+			remoteInfo = Astroids;
+		};
+		38B400C62220357700700D91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38B400982220357600700D91 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 38B4009F2220357600700D91;
+			remoteInfo = Astroids;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		38B400A02220357600700D91 /* Astroids.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Astroids.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		38B400A32220357600700D91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		38B400A52220357600700D91 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		38B400A72220357600700D91 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		38B400A92220357600700D91 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		38B400AB2220357600700D91 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		38B400AE2220357600700D91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		38B400B02220357700700D91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		38B400B32220357700700D91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		38B400B52220357700700D91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38B400BA2220357700700D91 /* AstroidsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AstroidsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		38B400BE2220357700700D91 /* AstroidsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstroidsTests.swift; sourceTree = "<group>"; };
+		38B400C02220357700700D91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38B400C52220357700700D91 /* AstroidsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AstroidsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		38B400C92220357700700D91 /* AstroidsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstroidsUITests.swift; sourceTree = "<group>"; };
+		38B400CB2220357700700D91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		38B4009D2220357600700D91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38B400B72220357700700D91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38B400C22220357700700D91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		38B400972220357600700D91 = {
+			isa = PBXGroup;
+			children = (
+				38B400A22220357600700D91 /* Astroids */,
+				38B400BD2220357700700D91 /* AstroidsTests */,
+				38B400C82220357700700D91 /* AstroidsUITests */,
+				38B400A12220357600700D91 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		38B400A12220357600700D91 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				38B400A02220357600700D91 /* Astroids.app */,
+				38B400BA2220357700700D91 /* AstroidsTests.xctest */,
+				38B400C52220357700700D91 /* AstroidsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		38B400A22220357600700D91 /* Astroids */ = {
+			isa = PBXGroup;
+			children = (
+				38B400A32220357600700D91 /* AppDelegate.swift */,
+				38B400A52220357600700D91 /* GameScene.sks */,
+				38B400A72220357600700D91 /* Actions.sks */,
+				38B400A92220357600700D91 /* GameScene.swift */,
+				38B400AB2220357600700D91 /* GameViewController.swift */,
+				38B400AD2220357600700D91 /* Main.storyboard */,
+				38B400B02220357700700D91 /* Assets.xcassets */,
+				38B400B22220357700700D91 /* LaunchScreen.storyboard */,
+				38B400B52220357700700D91 /* Info.plist */,
+			);
+			path = Astroids;
+			sourceTree = "<group>";
+		};
+		38B400BD2220357700700D91 /* AstroidsTests */ = {
+			isa = PBXGroup;
+			children = (
+				38B400BE2220357700700D91 /* AstroidsTests.swift */,
+				38B400C02220357700700D91 /* Info.plist */,
+			);
+			path = AstroidsTests;
+			sourceTree = "<group>";
+		};
+		38B400C82220357700700D91 /* AstroidsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				38B400C92220357700700D91 /* AstroidsUITests.swift */,
+				38B400CB2220357700700D91 /* Info.plist */,
+			);
+			path = AstroidsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		38B4009F2220357600700D91 /* Astroids */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38B400CE2220357700700D91 /* Build configuration list for PBXNativeTarget "Astroids" */;
+			buildPhases = (
+				38B4009C2220357600700D91 /* Sources */,
+				38B4009D2220357600700D91 /* Frameworks */,
+				38B4009E2220357600700D91 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Astroids;
+			productName = Astroids;
+			productReference = 38B400A02220357600700D91 /* Astroids.app */;
+			productType = "com.apple.product-type.application";
+		};
+		38B400B92220357700700D91 /* AstroidsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38B400D12220357700700D91 /* Build configuration list for PBXNativeTarget "AstroidsTests" */;
+			buildPhases = (
+				38B400B62220357700700D91 /* Sources */,
+				38B400B72220357700700D91 /* Frameworks */,
+				38B400B82220357700700D91 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				38B400BC2220357700700D91 /* PBXTargetDependency */,
+			);
+			name = AstroidsTests;
+			productName = AstroidsTests;
+			productReference = 38B400BA2220357700700D91 /* AstroidsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		38B400C42220357700700D91 /* AstroidsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38B400D42220357700700D91 /* Build configuration list for PBXNativeTarget "AstroidsUITests" */;
+			buildPhases = (
+				38B400C12220357700700D91 /* Sources */,
+				38B400C22220357700700D91 /* Frameworks */,
+				38B400C32220357700700D91 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				38B400C72220357700700D91 /* PBXTargetDependency */,
+			);
+			name = AstroidsUITests;
+			productName = AstroidsUITests;
+			productReference = 38B400C52220357700700D91 /* AstroidsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		38B400982220357600700D91 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Ori Karudo";
+				TargetAttributes = {
+					38B4009F2220357600700D91 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					38B400B92220357700700D91 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 38B4009F2220357600700D91;
+					};
+					38B400C42220357700700D91 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 38B4009F2220357600700D91;
+					};
+				};
+			};
+			buildConfigurationList = 38B4009B2220357600700D91 /* Build configuration list for PBXProject "Astroids" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 38B400972220357600700D91;
+			productRefGroup = 38B400A12220357600700D91 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				38B4009F2220357600700D91 /* Astroids */,
+				38B400B92220357700700D91 /* AstroidsTests */,
+				38B400C42220357700700D91 /* AstroidsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		38B4009E2220357600700D91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38B400AF2220357600700D91 /* Main.storyboard in Resources */,
+				38B400A62220357600700D91 /* GameScene.sks in Resources */,
+				38B400B12220357700700D91 /* Assets.xcassets in Resources */,
+				38B400B42220357700700D91 /* LaunchScreen.storyboard in Resources */,
+				38B400A82220357600700D91 /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38B400B82220357700700D91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38B400C32220357700700D91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		38B4009C2220357600700D91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38B400AA2220357600700D91 /* GameScene.swift in Sources */,
+				38B400AC2220357600700D91 /* GameViewController.swift in Sources */,
+				38B400A42220357600700D91 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38B400B62220357700700D91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38B400BF2220357700700D91 /* AstroidsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38B400C12220357700700D91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38B400CA2220357700700D91 /* AstroidsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		38B400BC2220357700700D91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 38B4009F2220357600700D91 /* Astroids */;
+			targetProxy = 38B400BB2220357700700D91 /* PBXContainerItemProxy */;
+		};
+		38B400C72220357700700D91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 38B4009F2220357600700D91 /* Astroids */;
+			targetProxy = 38B400C62220357700700D91 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		38B400AD2220357600700D91 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38B400AE2220357600700D91 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		38B400B22220357700700D91 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38B400B32220357700700D91 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		38B400CC2220357700700D91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		38B400CD2220357700700D91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		38B400CF2220357700700D91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Astroids/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = OxGames.Astroids;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		38B400D02220357700700D91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Astroids/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = OxGames.Astroids;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		38B400D22220357700700D91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AstroidsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = OxGames.AstroidsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Astroids.app/Astroids";
+			};
+			name = Debug;
+		};
+		38B400D32220357700700D91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AstroidsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = OxGames.AstroidsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Astroids.app/Astroids";
+			};
+			name = Release;
+		};
+		38B400D52220357700700D91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AstroidsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = OxGames.AstroidsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Astroids;
+			};
+			name = Debug;
+		};
+		38B400D62220357700700D91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AstroidsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = OxGames.AstroidsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Astroids;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		38B4009B2220357600700D91 /* Build configuration list for PBXProject "Astroids" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38B400CC2220357700700D91 /* Debug */,
+				38B400CD2220357700700D91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38B400CE2220357700700D91 /* Build configuration list for PBXNativeTarget "Astroids" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38B400CF2220357700700D91 /* Debug */,
+				38B400D02220357700700D91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38B400D12220357700700D91 /* Build configuration list for PBXNativeTarget "AstroidsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38B400D22220357700700D91 /* Debug */,
+				38B400D32220357700700D91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38B400D42220357700700D91 /* Build configuration list for PBXNativeTarget "AstroidsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38B400D52220357700700D91 /* Debug */,
+				38B400D62220357700700D91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 38B400982220357600700D91 /* Project object */;
+}
