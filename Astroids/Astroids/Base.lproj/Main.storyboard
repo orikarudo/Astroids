@@ -10,11 +10,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Game View Controller-->
+        <!--View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="Astroids" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
+                <viewController id="BV1-FR-VrT" sceneMemberID="viewController">
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -25,12 +25,14 @@
                                 <rect key="frame" x="16" y="53" width="375" height="132"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQ9-UJ-wgJ">
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQ9-UJ-wgJ">
                                 <rect key="frame" x="137" y="510" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="AQ9-UJ-wgJ" secondAttribute="height" multiplier="1:1" id="SOT-3h-j4r"/>
+                                </constraints>
                                 <state key="normal" image="goButton"/>
                                 <connections>
-                                    <segue destination="yVh-yB-b3d" kind="show" id="458-R6-L0K"/>
+                                    <segue destination="yVh-yB-b3d" kind="show" id="kuQ-NE-n3k"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="748" verticalCompressionResistancePriority="748" fixedFrame="YES" image="arcadeMachine" translatesAutoresizingMaskIntoConstraints="NO" id="EDK-gp-Hnu">
@@ -46,6 +48,7 @@
                             <constraint firstItem="ahk-yX-cjd" firstAttribute="trailing" secondItem="4qk-I5-YsI" secondAttribute="trailing" id="Bvn-Ex-Vfp"/>
                             <constraint firstItem="ahk-yX-cjd" firstAttribute="top" secondItem="3se-qz-xqx" secondAttribute="top" id="DhZ-sG-Q3m"/>
                             <constraint firstItem="ahk-yX-cjd" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" id="GGx-D6-ShJ"/>
+                            <constraint firstItem="4qk-I5-YsI" firstAttribute="bottom" secondItem="AQ9-UJ-wgJ" secondAttribute="bottom" constant="57" id="VZQ-4y-tlL"/>
                             <constraint firstItem="4qk-I5-YsI" firstAttribute="bottom" secondItem="ahk-yX-cjd" secondAttribute="bottom" id="edG-o5-cgL"/>
                             <constraint firstItem="4qk-I5-YsI" firstAttribute="trailing" secondItem="ahk-yX-cjd" secondAttribute="trailing" id="hou-cw-nrC"/>
                             <constraint firstItem="ahk-yX-cjd" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" id="mBu-qH-9KA"/>
@@ -58,13 +61,30 @@
             </objects>
             <point key="canvasLocation" x="1076" y="132.68365817091455"/>
         </scene>
-        <!--View Controller-->
+        <!--Game View Controller-->
         <scene sceneID="B5i-KZ-Jr1">
             <objects>
-                <viewController id="yVh-yB-b3d" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ezb-S5-D2S">
+                <viewController id="yVh-yB-b3d" customClass="GameViewController" customModule="Astroids" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ezb-S5-D2S" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jby-wa-gEN">
+                                <rect key="frame" x="33" y="555" width="68" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Speed Up"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gp-ia-lK0" userLabel="Gravity On">
+                                <rect key="frame" x="20" y="606" width="73" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Gravity On"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o2M-EK-adO">
+                                <rect key="frame" x="20" y="636" width="75" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Gravity Off"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="oJB-YF-qg5"/>
                     </view>
