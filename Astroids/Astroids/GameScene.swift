@@ -15,8 +15,14 @@ class GameScene: SKScene {
     private var spinnyNode : SKShapeNode?
     
     override func didMove(to view: SKView) {
+        let background = SKSpriteNode(imageNamed: "space_background")
+        background.position = CGPoint(x: self.size.width/2, y: self.size.height/2)
+        background.size = self.size
+        background.zPosition = 100
         
-        // Get label node from scene and store it for use later
+        
+        
+      /*  // Get label node from scene and store it for use later
         self.label = self.childNode(withName: "//helloLabel") as? SKLabelNode
         if let label = self.label {
             label.alpha = 0.0
@@ -84,6 +90,6 @@ class GameScene: SKScene {
     
     
     override func update(_ currentTime: TimeInterval) {
-        // Called before each frame is rendered
+        // Called before each frame is rendered */
     }
 }
