@@ -21,11 +21,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="space_background" translatesAutoresizingMaskIntoConstraints="NO" id="ahk-yX-cjd">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Asteroids_arcade_logo" translatesAutoresizingMaskIntoConstraints="NO" id="n6U-l0-KYf">
-                                <rect key="frame" x="16" y="53" width="375" height="132"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQ9-UJ-wgJ">
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQ9-UJ-wgJ">
                                 <rect key="frame" x="137" y="510" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="AQ9-UJ-wgJ" secondAttribute="height" multiplier="1:1" id="SOT-3h-j4r"/>
@@ -35,23 +31,19 @@
                                     <segue destination="yVh-yB-b3d" kind="show" id="kuQ-NE-n3k"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="748" verticalCompressionResistancePriority="748" fixedFrame="YES" image="arcadeMachine" translatesAutoresizingMaskIntoConstraints="NO" id="EDK-gp-Hnu">
-                                <rect key="frame" x="103" y="193" width="168" height="281"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Asteroids_arcade_logo" translatesAutoresizingMaskIntoConstraints="NO" id="n6U-l0-KYf">
+                                <rect key="frame" x="0.0" y="64" width="375" height="132"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ahk-yX-cjd" firstAttribute="bottom" secondItem="4qk-I5-YsI" secondAttribute="bottom" id="6M8-2p-Zxf"/>
-                            <constraint firstItem="ahk-yX-cjd" firstAttribute="top" secondItem="3se-qz-xqx" secondAttribute="top" id="7C1-kc-p4K"/>
-                            <constraint firstItem="ahk-yX-cjd" firstAttribute="top" secondItem="3se-qz-xqx" secondAttribute="top" id="AJb-f7-s51"/>
-                            <constraint firstItem="ahk-yX-cjd" firstAttribute="trailing" secondItem="4qk-I5-YsI" secondAttribute="trailing" id="Bvn-Ex-Vfp"/>
-                            <constraint firstItem="ahk-yX-cjd" firstAttribute="top" secondItem="3se-qz-xqx" secondAttribute="top" id="DhZ-sG-Q3m"/>
-                            <constraint firstItem="ahk-yX-cjd" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" id="GGx-D6-ShJ"/>
+                            <constraint firstItem="ahk-yX-cjd" firstAttribute="top" secondItem="3se-qz-xqx" secondAttribute="top" id="CCd-g0-FmF"/>
+                            <constraint firstItem="ahk-yX-cjd" firstAttribute="centerX" secondItem="AQ9-UJ-wgJ" secondAttribute="centerX" id="Hd7-LU-2cm"/>
+                            <constraint firstItem="ahk-yX-cjd" firstAttribute="bottom" secondItem="4qk-I5-YsI" secondAttribute="bottom" id="UVB-oV-hV7"/>
                             <constraint firstItem="4qk-I5-YsI" firstAttribute="bottom" secondItem="AQ9-UJ-wgJ" secondAttribute="bottom" constant="57" id="VZQ-4y-tlL"/>
-                            <constraint firstItem="4qk-I5-YsI" firstAttribute="bottom" secondItem="ahk-yX-cjd" secondAttribute="bottom" id="edG-o5-cgL"/>
-                            <constraint firstItem="4qk-I5-YsI" firstAttribute="trailing" secondItem="ahk-yX-cjd" secondAttribute="trailing" id="hou-cw-nrC"/>
-                            <constraint firstItem="ahk-yX-cjd" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" id="mBu-qH-9KA"/>
+                            <constraint firstAttribute="trailing" secondItem="ahk-yX-cjd" secondAttribute="trailing" id="azL-UF-Z7y"/>
+                            <constraint firstItem="ahk-yX-cjd" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leading" id="hyg-h4-F5E"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4qk-I5-YsI"/>
                     </view>
@@ -69,23 +61,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jby-wa-gEN">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jby-wa-gEN">
                                 <rect key="frame" x="33" y="555" width="68" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Speed Up"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gp-ia-lK0" userLabel="Gravity On">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gp-ia-lK0" userLabel="Gravity On">
                                 <rect key="frame" x="20" y="606" width="73" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Gravity On"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o2M-EK-adO">
-                                <rect key="frame" x="20" y="636" width="75" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o2M-EK-adO">
+                                <rect key="frame" x="20" y="636" width="75" height="30"/>
                                 <state key="normal" title="Gravity Off"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Jby-wa-gEN" firstAttribute="top" secondItem="oJB-YF-qg5" secondAttribute="top" constant="491" id="12t-mw-okR"/>
+                            <constraint firstItem="oJB-YF-qg5" firstAttribute="bottom" secondItem="8gp-ia-lK0" secondAttribute="bottom" constant="31" id="54u-07-f7c"/>
+                            <constraint firstItem="8gp-ia-lK0" firstAttribute="leading" secondItem="oJB-YF-qg5" secondAttribute="leading" constant="20" id="5Aw-0P-oRf"/>
+                            <constraint firstItem="oJB-YF-qg5" firstAttribute="trailing" secondItem="o2M-EK-adO" secondAttribute="trailing" constant="280" id="8gS-Ux-kos"/>
+                            <constraint firstItem="oJB-YF-qg5" firstAttribute="trailing" secondItem="Jby-wa-gEN" secondAttribute="trailing" constant="274" id="D2d-R6-i86"/>
+                            <constraint firstItem="Jby-wa-gEN" firstAttribute="leading" secondItem="oJB-YF-qg5" secondAttribute="leading" constant="33" id="GJ7-fd-Lrk"/>
+                            <constraint firstItem="oJB-YF-qg5" firstAttribute="bottom" secondItem="Jby-wa-gEN" secondAttribute="bottom" constant="82" id="NJy-0P-JVH"/>
+                            <constraint firstItem="oJB-YF-qg5" firstAttribute="bottom" secondItem="o2M-EK-adO" secondAttribute="bottom" constant="1" id="RUR-3y-ABw"/>
+                            <constraint firstItem="o2M-EK-adO" firstAttribute="top" secondItem="oJB-YF-qg5" secondAttribute="top" constant="572" id="WTS-R2-ypM"/>
+                            <constraint firstItem="oJB-YF-qg5" firstAttribute="trailing" secondItem="8gp-ia-lK0" secondAttribute="trailing" constant="282" id="aaR-SL-EfL"/>
+                            <constraint firstItem="8gp-ia-lK0" firstAttribute="top" secondItem="oJB-YF-qg5" secondAttribute="top" constant="542" id="diJ-H9-5vl"/>
+                            <constraint firstItem="o2M-EK-adO" firstAttribute="leading" secondItem="oJB-YF-qg5" secondAttribute="leading" constant="20" id="ouA-dh-5LI"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="oJB-YF-qg5"/>
                     </view>
                 </viewController>
@@ -114,7 +117,6 @@
     </scenes>
     <resources>
         <image name="Asteroids_arcade_logo" width="516" height="132"/>
-        <image name="arcadeMachine" width="331" height="676"/>
         <image name="goButton" width="269" height="268"/>
         <image name="space_background" width="1280" height="868"/>
     </resources>

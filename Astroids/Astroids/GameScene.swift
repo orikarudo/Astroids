@@ -13,7 +13,7 @@ class GameScene: SKScene {
     
   //  private var label : SKLabelNode?
   //  private var spinnyNode : SKShapeNode?
-    
+    var ball = SKSpriteNode(imageNamed: "soccerBall")
     override func didMove(to view: SKView) {
         let background = SKSpriteNode(imageNamed: "space_background")
         background.position = CGPoint(x: self.size.width/2, y: self.size.height/2)
@@ -21,10 +21,13 @@ class GameScene: SKScene {
         background.zPosition = -1
         self.addChild(background)
         
-        let ball = SKSpriteNode(imageNamed: "soccerBall")
+        
         ball.position = CGPoint(x: self.size.width/2, y: self.size.height/2)
         ball.zPosition = 1
+        ball.size = CGSize(width: 250, height: 190)
         self.addChild(ball)
+        
+        self.physicsBody = SKPhysicsBody(edgeLoopFrom: self.frame)
         
       /*  // Get label node from scene and store it for use later
         self.label = self.childNode(withName: "//helloLabel") as? SKLabelNode
