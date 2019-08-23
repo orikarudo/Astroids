@@ -56,7 +56,7 @@
         <!--Game View Controller-->
         <scene sceneID="B5i-KZ-Jr1">
             <objects>
-                <viewController id="yVh-yB-b3d" customClass="GameViewController" customModule="Astroids" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="yVh-yB-b3d" customClass="GameViewController" customModule="Astroids" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ezb-S5-D2S" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -99,6 +99,7 @@
         <!--Navigation Controller-->
         <scene sceneID="qW9-8z-LpC">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xJv-jw-EEv" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cDq-Ka-gVS" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1Vq-uc-Vt6">
@@ -110,7 +111,6 @@
                         <segue destination="BV1-FR-VrT" kind="relationship" relationship="rootViewController" id="WSm-i6-Unc"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xJv-jw-EEv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="250" y="133"/>
         </scene>
