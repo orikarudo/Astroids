@@ -213,7 +213,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 38B4009B2220357600700D91 /* Build configuration list for PBXProject "Astroids" */;
+			buildConfigurationList = 38B4009B2220357600700D91 /* Build configuration list for PBXProject "Bouncing-Head" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -555,7 +555,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		38B4009B2220357600700D91 /* Build configuration list for PBXProject "Astroids" */ = {
+		38B4009B2220357600700D91 /* Build configuration list for PBXProject "Bouncing-Head" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				38B400CC2220357700700D91 /* Debug */,

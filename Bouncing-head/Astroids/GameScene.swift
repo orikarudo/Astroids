@@ -13,15 +13,16 @@ class GameScene: SKScene {
     
     //  private var label : SKLabelNode?
     private var spinnyNode : SKShapeNode?
-    
+    var head: SKSpriteNode?
+  //  let head = childNode(withName: "sBall") as! SKSpriteNode
     override func didMove(to view: SKView) {
         let border = SKPhysicsBody(edgeLoopFrom: self.frame)
         border.friction = 0
         self.physicsBody = border
         
         physicsWorld.gravity = CGVector(dx: 0.0, dy: 0.0)
-        let head = childNode(withName: "sBall") as! SKSpriteNode
-        head.physicsBody!.applyImpulse(CGVector(dx:2.0, dy: -1.0))
+        head = childNode(withName: "sBall") as! SKSpriteNode
+        head!.physicsBody!.applyImpulse(CGVector(dx:400.0, dy: -200.0))
         // Get label node from scene and store it for use later
         //   self.label = self.childNode(withName: "//helloLabel") as? SKLabelNode
         /*      if let label = self.label {
@@ -57,6 +58,24 @@ class GameScene: SKScene {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        let move = SKAction.moveBy(x: 100, y: 100, duration: 0.5)
+
+        for touch in touches {
+            let location = touch.location(in: self)
+            let touchedNode = atPoint(location)
+            if touchedNode.name == "speedUp" {
+                self.head!.run(move)
+            }
+            if touchedNode.name == "gravityOff" {
+                physicsWorld.gravity = CGVector(dx: 0.0, dy: 0.0)
+            }
+            if touchedNode.name == "gravityOn" {
+                physicsWorld.gravity = CGVector(dx: 0.0, dy: -9.81)
+            }
+        }
+        
+        
+        
         
     }
     

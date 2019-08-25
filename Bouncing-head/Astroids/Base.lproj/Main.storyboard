@@ -31,10 +31,6 @@
                                     <segue destination="yVh-yB-b3d" kind="show" id="kuQ-NE-n3k"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Asteroids_arcade_logo" translatesAutoresizingMaskIntoConstraints="NO" id="n6U-l0-KYf">
-                                <rect key="frame" x="0.0" y="64" width="375" height="132"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -60,35 +56,7 @@
                     <view key="view" contentMode="scaleToFill" id="Ezb-S5-D2S" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jby-wa-gEN">
-                                <rect key="frame" x="33" y="555" width="68" height="30"/>
-                                <state key="normal" title="Speed Up"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gp-ia-lK0" userLabel="Gravity On">
-                                <rect key="frame" x="20" y="606" width="73" height="30"/>
-                                <state key="normal" title="Gravity On"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o2M-EK-adO">
-                                <rect key="frame" x="20" y="636" width="75" height="30"/>
-                                <state key="normal" title="Gravity Off"/>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="Jby-wa-gEN" firstAttribute="top" secondItem="oJB-YF-qg5" secondAttribute="top" constant="491" id="12t-mw-okR"/>
-                            <constraint firstItem="oJB-YF-qg5" firstAttribute="bottom" secondItem="8gp-ia-lK0" secondAttribute="bottom" constant="31" id="54u-07-f7c"/>
-                            <constraint firstItem="8gp-ia-lK0" firstAttribute="leading" secondItem="oJB-YF-qg5" secondAttribute="leading" constant="20" id="5Aw-0P-oRf"/>
-                            <constraint firstItem="oJB-YF-qg5" firstAttribute="trailing" secondItem="o2M-EK-adO" secondAttribute="trailing" constant="280" id="8gS-Ux-kos"/>
-                            <constraint firstItem="oJB-YF-qg5" firstAttribute="trailing" secondItem="Jby-wa-gEN" secondAttribute="trailing" constant="274" id="D2d-R6-i86"/>
-                            <constraint firstItem="Jby-wa-gEN" firstAttribute="leading" secondItem="oJB-YF-qg5" secondAttribute="leading" constant="33" id="GJ7-fd-Lrk"/>
-                            <constraint firstItem="oJB-YF-qg5" firstAttribute="bottom" secondItem="Jby-wa-gEN" secondAttribute="bottom" constant="82" id="NJy-0P-JVH"/>
-                            <constraint firstItem="oJB-YF-qg5" firstAttribute="bottom" secondItem="o2M-EK-adO" secondAttribute="bottom" constant="1" id="RUR-3y-ABw"/>
-                            <constraint firstItem="o2M-EK-adO" firstAttribute="top" secondItem="oJB-YF-qg5" secondAttribute="top" constant="572" id="WTS-R2-ypM"/>
-                            <constraint firstItem="oJB-YF-qg5" firstAttribute="trailing" secondItem="8gp-ia-lK0" secondAttribute="trailing" constant="282" id="aaR-SL-EfL"/>
-                            <constraint firstItem="8gp-ia-lK0" firstAttribute="top" secondItem="oJB-YF-qg5" secondAttribute="top" constant="542" id="diJ-H9-5vl"/>
-                            <constraint firstItem="o2M-EK-adO" firstAttribute="leading" secondItem="oJB-YF-qg5" secondAttribute="leading" constant="20" id="ouA-dh-5LI"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="oJB-YF-qg5"/>
                     </view>
                 </viewController>
@@ -99,7 +67,6 @@
         <!--Navigation Controller-->
         <scene sceneID="qW9-8z-LpC">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xJv-jw-EEv" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cDq-Ka-gVS" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1Vq-uc-Vt6">
@@ -111,12 +78,12 @@
                         <segue destination="BV1-FR-VrT" kind="relationship" relationship="rootViewController" id="WSm-i6-Unc"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xJv-jw-EEv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="250" y="133"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Asteroids_arcade_logo" width="516" height="132"/>
         <image name="goButton" width="269" height="268"/>
         <image name="space_background" width="1280" height="868"/>
     </resources>
